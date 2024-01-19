@@ -22,7 +22,7 @@ const Signup = () => {
         event.preventDefault();
 
 
-        axios.post('http://localhost:4000/api/v1/auth/signup', values)
+        axios.post('https://secure-login-backend.onrender.com/api/v1/auth/signup', values)
             .then(res => {
                 if(res.status === 200){
                     navigate('/')
